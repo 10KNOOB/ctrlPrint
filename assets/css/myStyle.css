@@ -1,0 +1,240 @@
+/* BOOTSTRQAP MODIFICATION CSS STARTS*/
+
+/* @media (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+} */
+
+/* BOOTSTRQAP MODIFICATION CSS ENDS*/
+/* COLOR VARIABLE STARTS */
+:root {
+  --pink: #ec028d;
+  --dark-blue: #303192;
+  --seach-bg: #8582b7;
+}
+
+/* COLOR VARIABLE ENDS */
+
+/* NAVBAR STARTS */
+
+.navbar {
+  border-bottom: 5px solid var(--pink);
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ced4da;
+  margin-top: -1px !important;
+  border-radius: 20px;
+  background: var(--seach-bg);
+}
+
+.form-group-search input {
+  width: 100%;
+  color: #fff;
+  padding: 2px 20px;
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+}
+
+.form-group-search button {
+  margin-right: 10px;
+  border: 0px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-group-search button i {
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.mobile-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .nav-link.active,
+  .navbar .nav-item:hover .nav-link {
+    color: var(--pink);
+  }
+}
+
+@media (max-width: 991px) {
+  .mobile-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* NAVBAR ENDS */
+
+/* FOOOTER STARTS */
+
+.cutom-footer {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 20, 77, 1) 0%,
+    rgba(46, 49, 144, 1) 10%,
+    rgba(46, 49, 144, 1) 90%,
+    rgba(0, 20, 77, 1) 100%
+  );
+
+  border-top: 5px solid var(--pink);
+  padding: 80px 0px;
+}
+
+.custom-footer-heading {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+.custom-footer-title {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.custom-footer-title span {
+  color: #fff !important;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 0.18rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-footer-navbar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 40rem;
+  flex-wrap: wrap;
+  column-gap: 40px;
+}
+
+.custom-footer-navbar-text {
+  color: #fff;
+  font-weight: 200;
+  text-transform: capitalize;
+  letter-spacing: 0.18rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-footer-navbar-text:hover {
+  color: var(--pink) !important;
+}
+
+.custom-footer-title span:hover {
+  color: var(--pink) !important;
+}
+
+.custom-footer-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.custom-footer-contacts-right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 100%;
+}
+
+.custom-footer-contacts-right i {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 28px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-footer-contacts-right i:hover {
+  color: var(--pink);
+}
+
+.custom-footer-contacts-right img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+  display: flex;
+  justify-content: end;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .custom-footer-navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 40rem;
+    flex-wrap: wrap;
+    column-gap: 40px;
+  }
+
+  .custom-footer-contacts {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
+
+/* FOOOTER ENDS */
+
+.bg-gradient-white {
+  background: linear-gradient(
+    180deg,
+    rgba(229, 227, 240, 1) 0%,
+    rgba(255, 255, 255, 1) 10%
+  );
+}
