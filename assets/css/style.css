@@ -631,11 +631,11 @@ label {
     margin-top: 0;
     border: none;
     border-radius: 0;
-    padding: 10px;
-    border-top: 3px solid #ff736a;
+    border: 1px solid #2e3192;
     background: #fff;
     width: 220px;
     box-shadow: 0 3px 24px rgb(0 0 0/10%);
+    margin-top: -18px;
   }
   .navbar .nav-item .dropdown-menu li {
     border-bottom: 1px solid #e6e6e6;
@@ -646,9 +646,9 @@ label {
   }
   .navbar .nav-item .dropdown-menu .dropdown-item {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px 0 10px 20px;
-    color: #091f3c;
+    color: #2e3192;
     position: relative;
     text-transform: capitalize;
     transition: all 0.5s ease-in-out;
@@ -665,8 +665,7 @@ label {
     top: 0;
     width: 0;
     height: 100%;
-    background: #ff736a;
-    border-radius: 6px;
+    background: #ec008c;
     transition: all 0.5s ease-in-out;
     z-index: -1;
   }
@@ -678,7 +677,7 @@ label {
   }
   .navbar .nav-item .nav-link.active,
   .navbar .nav-item:hover .nav-link {
-    color: #ff736a;
+    color: #ec008c;
   }
   .navbar .nav-item:hover .dropdown-menu {
     transition: 0.3s;
@@ -711,13 +710,13 @@ label {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #091f3c;
+    color: #2e3192;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .header-nav-link:hover {
-    color: #ff736a;
+    color: #ec008c;
   }
   .header-nav-link.search-box-outer {
     font-size: 18px;
@@ -829,12 +828,12 @@ button.navbar-toggler:focus {
     float: right;
   }
   .navbar .nav-item .nav-link {
-    color: #091f3c;
+    color: #2e3192;
     font-weight: 700;
     transition: all 0.5s ease-in-out;
   }
   .navbar .nav-item .nav-link:hover {
-    color: #fb7223 !important;
+    color: #ec008c !important;
   }
   .navbar-toggler {
     padding: 0;
@@ -845,18 +844,18 @@ button.navbar-toggler:focus {
   }
   .mobile-menu-link {
     font-size: 20px;
-    color: #091f3c;
+    color: #2e3192;
     font-weight: 500;
     padding-right: 20px;
     margin-bottom: 0;
     position: relative;
   }
   .mobile-menu-link:hover {
-    color: #ff736a;
+    color: #ec008c;
   }
   .navbar-toggler-icon {
     font-size: 25px;
-    color: #091f3c;
+    color: #2e3192;
     font-weight: 500;
   }
   .navbar .dropdown-menu {
@@ -890,6 +889,7 @@ button.navbar-toggler:focus {
   top: 0;
   opacity: 1;
   visibility: visible;
+  margin-top: 0;
 }
 @media all and (max-width: 991px) {
   .navbar .nav-item .dropdown-submenu .dropdown-menu {
@@ -903,7 +903,7 @@ button.navbar-toggler:focus {
     top: 4px;
   }
   .navbar .nav-item .dropdown-submenu a:hover {
-    color: #ff736a;
+    color: #ec008c;
   }
 }
 .search-popup {

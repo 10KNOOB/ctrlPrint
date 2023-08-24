@@ -500,7 +500,7 @@
 }
 
 .product-details-cart-button:hover {
-  background-color: var(--dark-blue);
+  background-color: var(--light-pink);
   color: #fff;
 }
 
