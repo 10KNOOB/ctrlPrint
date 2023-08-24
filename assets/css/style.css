@@ -502,7 +502,7 @@ label {
   outline: none;
   border-radius: 50px;
   color: #fff;
-  background-color: #ff736a;
+  background-color: #ec008c;
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -514,7 +514,7 @@ label {
 #scroll-top::before {
   content: "";
   position: absolute;
-  border: 3px solid #ff736a;
+  border: 3px solid #ec008c;
   border-radius: 50px;
   left: -6px;
   right: -6px;
