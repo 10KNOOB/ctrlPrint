@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Pacifico";
-  src: url(../fonts/pacifico/Pacifico.ttf) format("truetype");
+  src: url(../fonts/poppins/font-poppins.css) format("truetype");
 }
 
 *,
@@ -66,7 +66,7 @@ h6 {
   color: #091f3c;
   margin: 0;
   font-weight: 600;
-  font-family: rubik, sans-serif;
+  font-family: Poppins, sans-serif;
   line-height: 1.2;
 }
 h1 {
@@ -3572,32 +3572,35 @@ body.rtl-mode .price-wrapper {
 .small-img-row {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .small-img-col {
-  flex-basis: 24%;
   cursor: pointer;
-  background-color: #c3cacf;
-  border-radius: 3px;
+  width: 33.33%;
+}
+
+.small-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-details-big-img {
   width: 100%;
   height: 500px;
-  object-fit: contain;
+  object-fit: cover;
   background: #c3cacf;
   margin-bottom: 10px;
-  border-radius: 3px;
 }
 
 @media all and (max-width: 991px) {
   .product-details-big-img {
     width: 100%;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     background: #c3cacf;
     margin-bottom: 10px;
-    border-radius: 3px;
   }
 }
 
