@@ -41,7 +41,7 @@
 }
 
 .pink-text-link:hover {
-  color: var(--dark-blue);
+  color: var(--light-pink);
 }
 
 .pink-button {
@@ -66,13 +66,13 @@
 }
 
 .pink-button:hover {
-  color: var(--dark-blue) !important;
+  color: var(--light-pink) !important;
   transition: all 0.3s ease-in-out;
-  border: 2px solid var(--dark-blue);
+  border: 2px solid var(--light-pink);
 }
 
 .pink-button:hover a {
-  color: var(--dark-blue) !important;
+  color: var(--light-pink) !important;
   transition: all 0.3s ease-in-out;
 }
 
@@ -463,10 +463,11 @@
 .product-details-upload div i {
   font-size: 30px;
   color: var(--pink);
+  transition: all 0.3s ease-in-out;
 }
 
 .product-details-upload:hover div i {
-  color: var(--dark-blue);
+  color: var(--light-pink);
 }
 
 .product-details-upload-button {
@@ -477,7 +478,7 @@
 }
 
 .product-details-upload:hover .product-details-upload-button {
-  background-color: var(--dark-blue);
+  background-color: var(--light-pink);
   color: #fff;
 }
 
@@ -539,6 +540,39 @@
   color: #fff;
 }
 
+.product-details-heading {
+  font-size: 32px;
+}
+
+.product-details-interested {
+  position: relative;
+  width: 100%; /* Ensure the container takes the full width of its parent */
+  height: 100%;
+}
+
+.product-details-interested-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-details-order-now {
+  color: var(--pink);
+  text-transform: capitalize;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.product-details-order-now i {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.product-details-order-now:hover {
+  color: var(--light-pink);
+}
+
 @media (max-width: 767px) {
   .small-margint-top {
     margin-top: 10px;
@@ -547,6 +581,10 @@
   .product-details-upload {
     flex-direction: column;
     gap: 0px;
+  }
+
+  .product-details-heading {
+    font-size: 28px;
   }
 }
 
