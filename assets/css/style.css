@@ -3,7 +3,12 @@
 
 @font-face {
   font-family: "Pacifico";
-  src: url(../fonts/poppins/font-poppins.css) format("truetype");
+  src: url("../fonts/BebasNeue/BebasNeue-Regular.eot");
+  src: url("../fonts/BebasNeue/BebasNeue-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/BebasNeue/BebasNeue-Regular.woff2") format("woff2"),
+    url("../fonts/BebasNeue/BebasNeue-Regular.woff") format("woff"),
+    url("../fonts/BebasNeue/BebasNeue-Regular.ttf") format("truetype");
 }
 
 *,
