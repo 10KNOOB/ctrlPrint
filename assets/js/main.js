@@ -205,17 +205,20 @@ heartIcons.forEach(function (icon) {
 var ProductImg = document.getElementById("ProductImg");
 var SmallImg = document.getElementsByClassName("small-img");
 
-SmallImg[0].onclick = function () {
-  ProductImg.src = SmallImg[0].src;
-};
-SmallImg[1].onclick = function () {
-  ProductImg.src = SmallImg[1].src;
-};
-SmallImg[2].onclick = function () {
-  ProductImg.src = SmallImg[2].src;
-};
-SmallImg[3].onclick = function () {
-  ProductImg.src = SmallImg[3].src;
-};
+for (var i = 0; i < SmallImg.length; i++) {
+  SmallImg[i].onclick = function () {
+    ProductImg.style.opacity = 0; // Set the opacity to 0 to fade out
+    setTimeout(() => {
+      ProductImg.src = this.src; // Change the image source
+      ProductImg.style.opacity = 1; // Set the opacity back to 1 to fade in
+    }, 300); // 3-second delay
+
+    // Remove the "active" class from all small images
+    for (var j = 0; j < SmallImg.length; j++) {
+      SmallImg[j].classList.remove("active");
+    }
+    this.classList.add("active"); // Add the "active" class to the clicked small image
+  };
+}
 
 //tooltip
